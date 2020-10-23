@@ -103,11 +103,12 @@
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" placeholder="Write your message." cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send"  class="contact__button button">
+                    <form action="insert.php" method="POST" class="contact__form">
+                        <input type="username" placeholder="Name" name="username" required class="contact__input">
+                        <input type="email" placeholder="Email" name="email" required class="contact__input">
+ 	 <input type="mobile" placeholder="Mobile no(optional)" name="mobile" class="contact__input">
+                        <textarea name="" id="" placeholder="Write your message." name="message" required cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="Submit" value="Submit"  class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -115,7 +116,7 @@
           <!-- Footer -->
         <footer class="footer">
             <!-- replace with your own email address -->
-            <a href="mailto:vipul57612@gmail.com" class="footer__link">hello@vipul57612</a>
+            <a href="mailto:hello@jane.dev" class="footer__link">hello@vipul57612</a>
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.facebook.com/profile.php?id=100034364295200">
@@ -130,11 +131,6 @@
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://twitter.com/Vipul83864218">
                         <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-		<li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/vipul-kumar-05759b1a7">
-                        <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
