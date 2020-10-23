@@ -7,7 +7,7 @@ $message = $_POST['message'];
 if (!empty($username) || !empty($email)  || !empty($message)) {
 	$databaseHost = 'localhost';
 	$databaseUsername = 'root'; 
-	$databasePassword = ";
+	$databasePassword = '';
 	$databaseName = 'test';
 	//create connection
 	$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
