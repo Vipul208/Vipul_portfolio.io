@@ -1,3 +1,154 @@
-<?php
-Temporary unable to Contact.
->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vipul Portfolio site </title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- update these with the fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+pro:300,9000&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="image/logo.png" alt="logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link"> My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Vipul Kumar</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Member of DSC</p>
+            <img src="image/img_1.jpg" alt=" A picture of Vipul Kumar smiling" class="intro__img">
+        </section>
+
+
+        <!--  My services-->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Learing </h3>
+                    <p> I learned many things regarding coding from various platform like from my college classes, from seniors, through YouTube etc.</p>
+                </div>  <!-- /service -->
+
+                <div class="service">
+                    <h3>Coding</h3>
+                    <p> I had participated in many competition in my college. I score satisfied position in the competitions.</p>
+                </div> <!-- / service -->
+            </div>  <!-- / services -->
+
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+
+        <!-- about me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">I am student of REC Bijnor.</p>
+
+
+            <div class="about-me__body">
+                <p> I am a student of bachelor of Technology. </p>
+                <p> I took admission in college in year 2019. Currently, I am student of 2nd year.</p>
+            </div>
+
+            <img src="image/img_2.jpg" alt=" Vipul with work" class="about-me__img">
+        </section>
+
+
+        <!-- my work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--my-work">My Work</h2>
+            <p class="section__subtitle section__subtitle--work">  I have some knowledge in these languages.</p>
+
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="#work" class="portfolio__item">
+                    <img src="image/c1.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 02 -->
+                <a href="#work" class="portfolio__item">
+                    <img src="image/html.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="#work" class="portfolio__item">
+                    <img src="image/python.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+	<!--  Contact  -->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__container bd-grid">
+                    <form action="connect.php" method="POST" class="contact__form">
+                        <input type="text" placeholder="Name" name="username" required class="contact__input">
+                        <input type="text" placeholder="Email" name="email" required class="contact__input">
+ 	 <input type="text" placeholder="Mobile no(optional)" name="mobile" class="contact__input">
+                        <textarea name="" id="" placeholder="Write your message." name="message" required cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="Submit" value="Submit"  class="contact__button button">
+                    </form>
+                </div>
+            </section>
+
+          <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link">hello@vipul57612</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.facebook.com/profile.php?id=100034364295200">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/vipul._2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/Vipul83864218">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Vipul208">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+	<li class="social-list__item">
+                    <a class="social-list__link" href="https://www.hackerrank.com/vipul57612">
+                        <i class="fab fa-hackerrank"></i>
+                    </a>
+                </li>
+            </ul>
+	 <p>&#169; 2020 copyright all right reserved</p>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
