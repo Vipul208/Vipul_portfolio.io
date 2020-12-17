@@ -12,12 +12,14 @@
         <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+pro:300,9000&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
+        
     </head>
     <body>
         <header>
             <div class="logo">
                 <img src="image/logo.png" alt="logo">
             </div>
+            
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
@@ -28,6 +30,12 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
                 </ul>
+                <div class="search-box">
+                    <input class="search-txt"  type="text"  name=""  placeholder="Enter to Search">
+                    <a class="search-btn"  href="#">
+                        <i class="fas fa-search"> </i>
+                    </a>
+                </div>
             </nav>
 
         </header>
@@ -103,11 +111,11 @@
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <div class="contact__container bd-grid">
-                    <form action="insert.php" method="POST" class="contact__form">
-                        <input type="username" placeholder="Name" name="username" required class="contact__input">
-                        <input type="email" placeholder="Email" name="email" required class="contact__input">
- 	 <input type="mobile" placeholder="Mobile no(optional)" name="mobile" class="contact__input">
-                        <textarea name="" id="" placeholder="Write your message." name="message" required cols="0" rows="8" class="contact__input"></textarea>
+                    <form action="php/index.php" method="POST" class="contact__form">
+                        <input type="text" placeholder="Name" name="username" required class="contact__input">
+                        <input type="text" placeholder="Email" name="email" required class="contact__input">
+ 	  <input type="text" placeholder="Mobile no(optional)" name="mobile" class="contact__input">
+	  <input type="text" placeholder="Message" name="messag" required class="contact__input">
                         <input type="Submit" value="Submit"  class="contact__button button">
                     </form>
                 </div>
